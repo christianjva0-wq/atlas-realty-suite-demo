@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2eee7" />
+    <meta name="description" content="Demo funcional de sitio inmobiliario con inventario, publicaciones y CRM conectado." />
+    <title>Atlas Realty Suite — Demo inmobiliario</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="demo-ribbon"><span class="pulse"></span> DEMO INTERACTIVO <span class="ribbon-divider">·</span> Los cambios se guardan en este navegador</div>
+    <header class="topbar">
+      <a class="brand" href="#public" data-view="public" aria-label="Ir al sitio público">
+        <span class="brand-symbol">N</span><span class="brand-copy"><b>NORTE</b><small>INMOBILIARIA</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-link active" data-view="public">Sitio público</button>
+        <button class="nav-link" data-view="admin">Inventario</button>
+        <button class="nav-link" data-view="crm">CRM <span class="nav-count" id="nav-leads">0</span></button>
+      </nav>
+      <div class="topbar-actions"><span class="online-label"><i></i> Demo activa</span><button class="button button-dark" data-view="admin">Administrar <span aria-hidden="true">↗</span></button><button class="mobile-menu" id="mobile-menu" aria-label="Abrir menú">☰</button></div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="site-footer"><a class="brand footer-brand" href="#public" data-view="public"><span class="brand-symbol">N</span><span class="brand-copy"><b>NORTE</b><small>INMOBILIARIA</small></span></a><span>Una experiencia inmobiliaria conectada</span><span>Demo de producto · Atlas Digital AI</span></footer>
+    <div id="modal-root"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
